@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 첫 웹앱</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background: #fff4f7;
+      padding: 50px 20px;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      background: #f49ab5;
+      color: white;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🐾 나의 첫 웹앱</h1>
+  <p>버튼을 눌러 보세요!</p>
+
+  <button onclick="showMessage()">눌러 보기</button>
+  <p id="result"></p>
+
+  <script>
+    function showMessage() {
+      document.getElementById("result").textContent =
+        "축하해요! 첫 번째 기능이 작동했어요 🎉";
+    }
+  </script>
+</body>
+</html>
